@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        iframe,
+        h1,
+        h2,
+        h3,
+        ol,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+
+        body {
+            background: #0e0f0e url('images/bg.gif') repeat-x bottom;
+            color: #aaa;
+            font: normal 68.75% Arial, Helvetica, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        h1 {
+            display: block;
+            font-size: 300%;
+            font-weight: bold;
+            padding: 0;
+            text-align: center;
+            margin: 20px 0 0 0;
+            color: #d12727
+        }
+
+        h1 span {
+            color: #fff;
+            display: inline;
+            font-size: 110%;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1:first-letter,
+        h2,
+        #sidebar h3 {
+            color: #b6da6e;
+        }
+
+        h2 {
+            font-size: 200%;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 150%;
+        }
+
+        li {
+            display: block;
+            margin: 0;
+            padding: 0px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0 0 20px;
+        }
+
+        li a {
+            font: bold 150% "Trebuchet MS", sans-serif;
+            display: block;
+            text-decoration: none;
+            padding: 0 0 5px 0;
+        }
+
+        li a:first-letter {
+            color: #d12727;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+            justify-content: flex-end;
+        }
+
+        .item {
+            margin: 5px;
+        }
+
+        .container>div {
+
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1><span>Photo </span>Gallery</h1>
+    </div>
+    <div class="container">
+        <div>
+            <!--Content Here-->
+            <img src="images/Client.png" alt="client">
+
+        </div>
+        <div>
+            <!--Content Here-->
+            <img src="images/client3.jpg" alt="client3">
+
+
+
+        </div>
+
+        <div class="flexbox-item three">
+            <!--Content Here-->
+            <img src="images/client4.jpg" alt="client4">
+
+        </div>
+        <div class="flexbox-item four">
+            <!--Content Here-->
+            <img src="images/client5.jpg" alt="client5">
+
+
+        </div>
+        <div class="flexbox-item five">
+            <!--Content Here-->
+            <img src="images/client6.jpg" alt="client6">
+
+        </div>
+        <div class="flexbox-item six">
+            <!--Content Here-->
+            <img src="images/client2.jpg" alt="client2">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
