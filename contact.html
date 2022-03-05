@@ -1,37 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Contact page</title>
 
-<style>
-     html, body, div, span, iframe, h1, h2, h3, ol, ul, li{ margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
-     body { background: #0e0f0e url('images/bg.gif') repeat-x bottom; color: #aaa; font: normal 68.75% Arial, Helvetica, sans-serif; }
-     h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", Arial, sans-serif; }
-    h1 { display: block; font-size: 300%; font-weight: bold; padding: 0; text-align: center; margin: 20px 0 0 0; color: #d12727  }
-    h1 span { color: #fff; display: inline; font-size: 110%; font-family: Verdana, sans-serif; }
-    h1:first-letter, h2, #sidebar h3 { color: #b6da6e; }
-    h2 { font-size: 200%; font-weight: bold; }
-    h3 { font-size: 150%; }
-    li { display: block; margin: 0; padding: 0px; font-weight: bold;text-align: center; margin: 20px 0 0 20px;}
-    li a { font: bold 150% "Trebuchet MS", sans-serif; display: block; text-decoration: none; padding: 0 0 5px 0; }
-    li a:first-letter { color: #d12727; }
-</style>
+    <style>
+        html, body, div, span,h1, h2, h3, ol, ul, li {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+
+        body {
+            background: #0e0f0e url('images/bg.gif') repeat-x bottom;
+            color: #aaa;
+            font: normal 68.75% Arial, Helvetica, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        h1 {
+            display: block;
+            font-size: 300%;
+            font-weight: bold;
+            padding: 0;
+            text-align: center;
+            margin: 20px 0 0 0;
+            color: #d12727
+        }
+
+        h1 span {
+            color: #fff;
+            display: inline;
+            font-size: 110%;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1:first-letter,
+        h2:first-letter {
+            color: #b6da6e;
+        }
+
+        h2 {
+            display: block;
+            font-size: 200%;
+            font-weight: bold;
+            padding: 0;
+            text-align: center;
+            margin: 20px 0 0 0;
+            color: #d12727
+        }
+
+        h2 span {
+            color: #fff;
+            display: inline;
+            font-size: 110%;
+            font-family: Verdana, sans-serif;
+        }
+
+        li {
+            display: block;
+            margin: 0;
+            padding: 0px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0 0 20px;
+        }
+
+        li a {
+            font: bold 150% "Trebuchet MS", sans-serif;
+            display: block;
+            text-decoration: none;
+            padding: 0 0 5px 0;
+        }
+
+        li a:first-letter {
+            color: #d12727;
+        }
 
 
+        input[type=text], input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+     
+            border-radius: 4px;
+        
+            box-sizing: border-box;
+           
+            margin-top: 6px;
+           
+            margin-bottom: 16px;
+           
+            resize: vertical
+                
+        }
 
+        
+        input[type=submit] {
+            background-color: #b6da6e;
+            color: #aaa;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+      
+        input[type=submit]:hover {
+            background-color: white;
+        }
+
+      
+        .container {
+            border-radius: 5px;
+            background-color: #aaa;
+            padding: 20px;
+        
+        }
+        #footer { clear: both; text-align: center; }
+        
+    </style>
 
 <body>
-<h1><span>Contact </span>Me:</h1> 
+    <h1><span>Contact </span>Mak G</h1>
     <ol>
-    <li>Business Location: Denver, CO</li>
-    <li>Phone: 777 777 7777</li>
-    <li>Email: michaelmakanjuola69@gmail.com</li>
-    <li>Instagram: @makg_entertainment</li>
-</ol>
-<br>
-<br>
+        <li>Business Location: Denver, CO</li>
+        <li>Phone: 777 777 7777</li>
+        <li>Email: michaelmakanjuola69@gmail.com</li>
+        <li>Instagram: @makg_entertainment</li>
+    </ol>
+    <br>
+    <br>
+
+    <div class="form-container">
+
+        <h2><span>Get in touch with </span> Mak G</h2>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+
+            <!-- <form method="POST" action="/"> -->
+            <form action="contact/send" method="POST">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+
+    </div>
+    
+    <div id="footer">
+     
+        <br>
+      <p>&copy; 2022 <a target="_blank" >Anastassiya Savostina</a></p>
+    </div>
+
+
 </body>
+
 </html>

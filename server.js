@@ -52,29 +52,29 @@ app.listen(PORT, function(){
 
 //A post request for NODEMAILER https://nodemailer.com/about/
 app.post('/contact/send', function (req, res) {
-    var transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'michaelmakanjuola69@gmail.com',
-            pass: ''
-        }
-    })
-    var mailOptions = {
-        from: 'Mak G <michaelmakanjuola69@gmail.com>',
-        to: 'michaelmakanjuola69@gmail.com',
-        subject: 'Website Submission',
-        text: 'You have a submission with the following details... Name: ' + req.body.name + 'Email: ' + req.body.email + 'Message: ' + req.body.message,
-        html: '<p>You have a submission with the following details...</p><ul><li>Name: ' + req.body.name + '</li><li>Email: ' + req.body.email + '</li><li>Message: ' + req.body.message + '</li></ul>'
-    }
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error)
-            res.redirect('/')
-        } else {
-            console.log('Message Sent: ' + info.response)
-            res.redirect('/')
-        }
-    })
+  var transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+          user: 'ana.savostina@yahoo.com',
+          pass: 'Asherbac1605!'
+      }
+  })
+  var mailOptions = {
+      from: 'Ana Savostina <ana.savostina@yahoo.com>',
+      to: 'ana.savostina@yahoo.com',
+      subject: 'Website Submission',
+      text: 'You have a submission with the following details... Name: ' + req.body.name + 'Email: ' + req.body.email + 'Message: ' + req.body.message,
+      html: '<p>You have a submission with the following details...</p><ul><li>Name: ' + req.body.name + '</li><li>Email: ' + req.body.email + '</li><li>Message: ' + req.body.message + '</li></ul>'
+  }
+  transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+          console.log(error)
+          res.redirect('/')
+      } else {
+          console.log('Message Sent: ' + info.response)
+          res.redirect('/')
+      }
+  })
 })
 
 
