@@ -3,7 +3,7 @@ https://fierce-lowlands-21244.herokuapp.com/
 
 
 
-![image](https://raw.githubusercontent.com/anastassiyas/Computer-Info-System-Blog/main/images/blog%20(2).png)
+![image](https://github.com/anastassiyas/makg_entertainment/blob/main/public/images/Screenshot%20.png?raw=true)
 
 **Overview:**
 
