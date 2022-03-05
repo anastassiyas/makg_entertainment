@@ -7,7 +7,7 @@ https://fierce-lowlands-21244.herokuapp.com/
 
 **Overview:**
 
-This site is about the musician Michael Makanjuo. Entertains at weddings, graduations, parties, social/corporate events, special occasions.
+This site is about the musician Michael Makanjuola. Entertains at weddings, graduations, parties, social/corporate events, special occasions.
 
 **Goal:**
 
